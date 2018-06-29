@@ -1,0 +1,16 @@
+doctype html
+html(lang="zh-cmn-Hans")
+  head
+    include ../partials/header.pug
+  body
+    include ../partials/nav.pug
+
+    <div class="container">
+      <h2>Database Results</h2>
+      <ul>
+        each item in results
+          li
+            span= item.id
+            p= item.name
+      </ul>
+    </div>
